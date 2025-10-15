@@ -1,0 +1,30 @@
+:root{
+    --color-brand:#c2efd4;
+}
+section.hero{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-brand);
+}
+div.hero one section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.hero tow section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.hero tow section img{
+    width: 230px;
+    height: 300px;
+
+
+}

@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
-
+     <script src="https://kit.fontawesome.com/409fdf9367.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <script src="./js/app.js" defer></script>
 </head>
 <body>
+    <!-- nav section start -->
     <nav>
-        <div>online Shopping</div>
+        <div><h1>online Shopping</h1></div>
         <div>
-            <ul>
+            <ul id="ul">
                 <li>
                     <a href="home.html">Home</a>
                 </li>
@@ -28,14 +31,26 @@
             </ul>
         </div>
         <div class="naz"> 
-            <span class="material-symbols-outlined">
-                shopping_cart_checkout
-                </span>
-
+            <i class="fa-solid fa-cart-shopping"></i>
             <button>Login</button>
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-xmark"></i>
+            <i id="bars" class="fa-solid fa-bars"></i>
+            <i id="mark" class="fa-solid fa-xmark"></i>
         </div>
     </nav>
+    <!-- nav secyion end -->
+     <!-- hero section start -->
+      <section class="hero">
+        <div class="hero one section">
+            <h1>Discover and find your own fishion!</h1>
+            <p>Explore our curated collection of stylish
+                clothing and accessories tailored tow your 
+                unique taste.
+            </p>
+        
+        </div>
+        <div class="hero tow section">
+            <img src="./images/13.jpg" alt="">
+        </div>
+      </section>
 </body>
 </html>
