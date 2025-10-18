@@ -1,6 +1,6 @@
 const bars = document.getElementById("bars");
 const ul = document.getElementById("ul");
-const xmark= document.getElementById("xmark");
+const xmark= document.getElementById("mark");
 bars.addEventListener("click",()=>{
     ul.classList.add("showUl");
     xmark.classList.add("showX");
