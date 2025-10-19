@@ -12,34 +12,81 @@ section.feature{
 }
 div.card-container{
     width: 100%;
+    margin: 12px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
 }
-div.card div.desc{
+div.desc div.card{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     flex-direction: column;
 }
-div.card div.desc div.price{
-    display: flex;
-    justify-content: space-between;
+div.desc div.card div.price{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
 }
 div.card{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+
 }
 div.card h1{
     font-size: 18px;
 }
 div.card img{
     height: 230px;
-    display: flex;
     
+}
+div.price> span.second-span{
+    position: relative;
+    text-align: right;
 
+}
+div.price> span.second-span::before{
+    content: "";
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+div.btn-cotainer{
+    width: 100%;
+    /* height: fit-content; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.btn-cotainer>button{
+    padding: 8px 15px;
+    border: 1px solid black;
+    color: black;
+
+}
+
+@media(max-width:768px){
+div.card-container{
+    grid-template-columns:1fr 1fr;
+    gap: 10px;
+    
+}
+}
+
+@media(max-width:500px){
+    div.card-container{
+    padding: 6px;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
 }

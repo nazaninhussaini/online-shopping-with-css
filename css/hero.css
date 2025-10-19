@@ -53,12 +53,13 @@ div.hero-one-section h1{
 
 }
 div.hero-tow-section img {
-    width: 230px;
-    height: 300px;
+    width: 200px;
+    height: 270px;
 
 }
 section.hero{
     gap: 5px;
+    
 }
 }
 @media(max-width:500px){

@@ -75,6 +75,7 @@ div.naz span{
 @media(max-width:768px){
     nav {
         padding: 12px 15px;
+        
     }
     nav div h1{
         font-size: 15px;
@@ -99,13 +100,7 @@ div.naz span{
         gap: 20px;
         align-items: center;  
     }
-    /* .showX{
-        display: block;
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        font-size: 28px;
-    } */
+  
 }
 @media(max-width:500px){
     nav {
