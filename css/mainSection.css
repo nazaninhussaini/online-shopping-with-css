@@ -1,0 +1,71 @@
+div.main-section{
+    max-width: 960px;
+    width: 100%;
+    margin: 12px auto;
+}
+div.main-section div.header-text{
+    display: flex;
+    justify-content: center;
+
+}
+div.main-section div.header-text h1{
+    font-size: 32px;
+    font-weight: 900;
+}
+div.main-section div.filter{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+div.main-section div.filter a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+div.main-section > div.product-con{
+    padding: 6px;
+    width: 100%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4,1fr);
+
+}
+div.main-section > div.product-con div.card{
+    height: 280px;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+div.main-section > div.product-con div.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 13px;
+
+}
+div.main-section > div.product-con div.card div.card-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transition: 1s;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 0;
+    border-radius: 12px;
+    border-top-right-radius:0 ;
+    border-top-left-radius: 0;
+
+}
+div.main-section > div.product-con div.card:hover> div.card-text{
+    height: 80px;
+    opacity: 0.9;
+}
