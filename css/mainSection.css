@@ -29,13 +29,11 @@ div.main-section > div.product-con{
     display: grid;
     gap: 8px;
     grid-template-columns: repeat(4,1fr);
-
 }
 div.main-section > div.product-con div.card{
-    height: 280px;
+    height: 300px;
     border-radius: 12px;
     display: flex;
-    gap: 8px;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -68,4 +66,21 @@ div.main-section > div.product-con div.card div.card-text{
 div.main-section > div.product-con div.card:hover> div.card-text{
     height: 80px;
     opacity: 0.9;
+}
+@media(max-width:768px){
+div.main-section > div.product-con{
+    padding: 8px;
+    gap: 6px;
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media(max-width:500px){
+    div.main-section > div.product-con{
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+div.main-section > div.product-con div.card{
+    height: 370px;
+    border-radius: 9px;
+}
 }
