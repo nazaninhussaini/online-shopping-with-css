@@ -14,8 +14,8 @@ nav{
     left: 0;
     padding: 10px 20px;
     width: 100%;
-    color: var(--text-brand);
-
+    color: transparent;
+    backdrop-filter: blur(6px);
 }
 nav div ul{
     display: flex;
@@ -28,6 +28,7 @@ nav div ul{
 nav div h1{
     font-size: 18px;
     font-weight: bold;
+    color: var(--text-brand);
 }
 
 nav div ul li{
