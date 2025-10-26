@@ -1,16 +1,19 @@
 :root{
     --color-brand:#c2efd4;
-    --text-brand:#224f34;
+    /* --text-brand:#224f34; */
 
 }
 section.itg{
     width: 100%;
-    height: 400px;
-    padding: 15px;
+    height: 300px;
+    padding: 10px;
     background-color: var(--color-brand);
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 5px;   
+    max-width: 960px;
+    margin: 12px auto;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6px;
+       
 }
 section.itg> div.first-group{
     width: 100%;
@@ -18,19 +21,75 @@ section.itg> div.first-group{
     display: flex;
     position: relative;
     justify-content: center;
+    align-items: center;
 }
 section.itg> div.first-group> img.girl{
-    height: 100%;
+    height: 260px;
     width: 80%;
 }
 section.itg> div.first-group> div{
     position: absolute;
-    left: 12px;
-    bottom: 12px;
+    left: 20px;
+    bottom: 20px;
     height: 80px;
     width: 80px;
 }
 section.itg> div.first-group> div img{
     height: 100%;
     width: 100%;
+}
+section.itg> div.second-group{
+    padding: 7px;
+}
+section.itg> div.second-group h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+section.itg> div.second-group> p{
+    text-align: justify;
+    font-size: 1rem;
+}
+section.itg> div.second-group> .small-card-cnt{
+    display: flex;
+    gap: 7px;
+
+}
+section.itg> div.second-group> .small-card-cnt .small-card{
+    padding: 8px;
+    margin-top: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+section.itg> div.second-group> button{
+    background-color: black;
+    color: white;
+    margin: 12px 0;
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+@media(max-width:768px){
+section.itg{
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    background-color: var(--color-brand);
+    display: grid;
+    max-width: 960px;
+    margin: 12px auto;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 6px;
+       
+}
+}
+@media(max-width:500px){
+    section.itg{
+        height: fit-content;
+    grid-template-columns: 1fr;
+    gap: 8px;      
+}
 }

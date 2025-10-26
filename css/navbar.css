@@ -12,10 +12,11 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     width: 100%;
     color: transparent;
     backdrop-filter: blur(6px);
+    z-index: 999;
 }
 nav div ul{
     display: flex;
@@ -76,7 +77,7 @@ div.naz span{
 
 @media(max-width:768px){
     nav {
-        padding: 12px 15px;
+        padding: 5px 10px;
         
     }
     nav div h1{
