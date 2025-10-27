@@ -1,3 +1,59 @@
 section.dig{
     max-width: 960px;
+    width: 100%;
+    margin: 30px auto;
+}
+section.dig div.text-header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+section.dig div.text-header> h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+section.dig div.text-header> p{
+    white-space: wrap;
+    overflow: hidden;
+    font-size: 1rem;
+
+}
+section.dig div.dig-con{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+section.dig div.dig-con> div.box{
+    height: fit-content;
+}
+section.dig div.dig-con> div.box img{
+    height: 260px;
+    width: 100%;
+}
+section.dig div.dig-con> div.box div.box-text{
+    width: 100%;
+    text-align: center;
+
+}
+section.dig div.dig-con> div.box div.box-text> h1{
+    font-size: 18px;
+}
+@media(max-width:768px){
+ section.dig div.dig-con{
+ 
+    gap: 8px;
+    margin-top: 16px;
+}   
+}
+@media(max-width:500px){
+    section.dig div.dig-con{
+   
+    grid-template-columns:1fr;
+    gap: 6px;
+    margin-top: 12px;
+}
 }
